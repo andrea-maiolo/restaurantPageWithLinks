@@ -1,1 +1,6 @@
-console.log("hello world!")
+import {pageLoad} from './pageLoad'
+
+console.log("hello world!");
+
+
+
