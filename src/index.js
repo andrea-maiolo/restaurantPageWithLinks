@@ -1,4 +1,4 @@
- import {pageLoad} from 'pageLoad/pageLoad'
+ import {pageLoad} from './pageLoad'
 
 
 

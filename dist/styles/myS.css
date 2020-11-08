@@ -14,6 +14,9 @@
     flex: 3;
     display: flex;
     font-size: larger;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
 li {
@@ -29,21 +32,24 @@ a {
     flex: 1;
     list-style-type: none;
     display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
 #firstImg {
-    background-image: url(kitchen-cloth-on-wood-table.jpg);
+    background-image: url(img/tim.jpg);
     text-align: left;
 }
 
 #secondImg {
-    background-image: url(mexican-food-left-side-background.jpg);
+    background-image: url(img/mexican-food-left-side-background.jpg);
     text-align: right;
 }
 
 #thirdImg {
     text-align: left;
-    background-image: url(breakfast-food-standing-right-side.jpg);
+    background-image: url(img/breakfast-food-standing-right-side.jpg);
 }
 
 .images {
@@ -75,6 +81,9 @@ a {
     flex: 1;
     list-style-type: none;
     display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
 footer {
@@ -88,11 +97,13 @@ footer {
 
 h1 {
     font-size: xx-large;
-    color: aquamarine;
+    color:#e0c7bd;
+    /* color: aquamarine; */
 
 }
 
 p {
-    color: aquamarine;
+    /* color: aquamarine; */
     font-size: x-large;
+    color:#e0c7bd;
 }
