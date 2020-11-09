@@ -38,18 +38,18 @@ a {
 }
 
 #firstImg {
-    background-image: url(img/tim.jpg);
+    background-image: url(img/mgg-vitchakorn-98Xi5vMGKck-unsplash.jpg);
     text-align: left;
 }
 
 #secondImg {
-    background-image: url(img/mexican-food-left-side-background.jpg);
+    background-image: url(img/wine-dharma-LAQVVwmIZQI-unsplash.jpg);
     text-align: right;
 }
 
 #thirdImg {
     text-align: left;
-    background-image: url(img/breakfast-food-standing-right-side.jpg);
+    background-image: url(img/eaters-collective-12eHC6FxPyg-unsplash.jpg);
 }
 
 .images {
