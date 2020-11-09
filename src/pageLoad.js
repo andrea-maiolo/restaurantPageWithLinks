@@ -74,7 +74,7 @@ const pageLoad = (function() {
     welcomeMessage.innerHTML = "Welcome to Mario's!";
 
     const divFirstImgP = document.createElement('p');
-    divFirstImgP.innerHTML = "Modern Italian cuisine, world-class mixology, and dramatic design.\<br>Mario's is an award-winning restaurant which uses the finest ingredients\<br>and expert traditional techniques to create timeless yet innovative signature dishes.";
+    divFirstImgP.innerHTML = "Modern Italian cuisine, and dramatic design.\<br>Mario's is an award-winning restaurant \<br>which uses the finest ingredients\<br>and expert traditional techniques to create \<br> timeless yet innovative signature dishes.";
 
     divFirstImg.appendChild(welcomeMessage);
     divFirstImg.appendChild(divFirstImgP);

@@ -1,3 +1,4 @@
+
 .header {
     background-color: aquamarine;
     display: flex;
@@ -38,18 +39,18 @@ a {
 }
 
 #firstImg {
-    background-image: url(img/mgg-vitchakorn-98Xi5vMGKck-unsplash.jpg);
+    background-image: url(img/tim.jpg);
     text-align: left;
 }
 
 #secondImg {
-    background-image: url(img/wine-dharma-LAQVVwmIZQI-unsplash.jpg);
+    background-image: url(img/mexican-food-left-side-background.jpg);
     text-align: right;
 }
 
 #thirdImg {
     text-align: left;
-    background-image: url(img/eaters-collective-12eHC6FxPyg-unsplash.jpg);
+    background-image: url(img/breakfast-food-standing-right-side.jpg);
 }
 
 .images {
@@ -98,12 +99,82 @@ footer {
 h1 {
     font-size: xx-large;
     color:#e0c7bd;
-    /* color: aquamarine; */
 
 }
 
 p {
-    /* color: aquamarine; */
     font-size: x-large;
     color:#e0c7bd;
 }
+
+/* this is 
+just a lines
+of comments */
+
+
+.slideshow-container {
+    max-width: 90%;
+    min-height: 430px;
+    position: relative;
+    margin: auto
+}
+/* .slideshow-inner{
+    /* background-size: cover;
+    background-position: center; */
+    /* width:100%; */
+    /* text-align: center;
+    color:#ffffff;
+    font-size: x-large; */
+
+.mySlides {
+    display: none;
+  height: 400px;
+  border: solid 1px black;
+}
+.images{
+    height: 300px;
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: #222428;
+    font-weight: bold;
+    font-size: 30px;
+    transition: .6s ease;
+    border-radius: 0 3px 3px 0
+}
+
+.next {
+    right: -50px;
+    border-radius: 3px 3px 3px 3px
+}
+
+.prev {
+    left: -50px;
+    border-radius: 3px 3px 3px 3px
+}
+
+.prev:hover,
+.next:hover {
+    color: #f2f2f2;
+    background-color: rgba(0, 0, 0, 0.8)
+}
+
+.description {
+    color: #f2f2f2;
+    font-size: large;
+    padding-top: 12px;
+  padding-bottom: 12px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: #222428
+}
+

@@ -13,21 +13,21 @@
   <div class="slideshow-inner">
     <div class="mySlides fade">
 
-      <q class="author">Great food.
+      <q class="text">Great food.
         We ate here during the week and we really enjoyed the food. Staff were very attentive and helpful. We are here for the summer and are really enjoying the food in Dingle. Great Restaurant</q>
-      <p class="text">- AlexCoventry12</p>
+      <p class="author">- AlexCoventry12</p>
     </div>
     
     <div class="mySlides fade">
-      <q class="author">Well worth a return visit
+      <q class="text">Well worth a return visit
         We visited Random on 14th August to celebrate a family birthday. This was the second time we visited this year as we had visited in previously in July with friends. The food was delicious- everyone was delighted with the portions even the hungry males. The service was friendly. In these times of COVID restrictions it also felt safe. We will be back on our next visit to Dingle. Would highly recommend this restaurant.</q>
-      <p class="text">- ToadMo</p>
+      <p class="author">- ToadMo</p>
     </div>
     
     <div class="mySlides fade">
-      <q class="author">Excellent cooking with great ingredients & robust flavours
+      <q class="text">Excellent cooking with great ingredients & robust flavours
         Looking for something a little different in Dingle? Random is a real find in a town where there is lots of great food but many menus look similar. Modern cooking with a twist here but not gimmicky. Portions are not small and there is good variety from a compact menu. There is no 'kids menu' as such but the restaurant is really accommodating and flexible in going 'off menu' for younger palates so you are sure to find something. Staff were very professional and welcoming from making the booking to the end of our meal. We went here on our last night of a week's holiday and will go back when we next visit Dingle.</q>
-      <p class="text">- Thomas A. Edison</p>
+      <p class="author">- Thomas A. Edison</p>
     </div>
   </div>
 
@@ -36,58 +36,8 @@
   <a class="next" onclick="plusSlides(1)">❯</a>
     
   </div>
-  <br/>
-  <div style='text-align: center;'>
-    <span class="dot" onclick='currentSlide(1)'></span>
-    <span class="dot" onclick='currentSlide(2)'></span>
-    <span class="dot" onclick='currentSlide(3)'></span>
-  </div>
   <script src="footer.js"></script>
     </div>
-
-<!-- comments -->
-    <!-- <div class="slideshow-container">
-      <div class="slideshow-inner"> -->
-    <!--<div class="mySlides fade">
-      
-          <img  src='./assets/img/web-crab-compressed.jpg' style='width: 100%;' alt="sally lightfoot crab"/>
-          <div class="text">Sally Lightfoot Crab</div>
-        </div> -->
-      
-        <!-- <div class="mySlides fade">
-      
-          <img  src='./assets/img/web-fighting-nazcas.jpg' style='width: 100%;' alt="fighting nazca boobies"/>
-          <div class="text">A scuffle between two Nazca Boobies</div>
-        </div> -->
-      
-        <!-- <div class="mySlides fade">
-      
-          <img  src='./assets/img/web-otovalo-waterfall.jpg' style='width: 100%;' alt="otovalo waterfall"/>
-          <div class="text">A waterfall discovered on a hike in Otovalo</div>
-        </div>
-      
-        <div class="mySlides fade">
-      
-          <img  src='./assets/img/web-pelican.jpg' style='width: 100%;' alt="pelican"/>
-          <div class="text">Pelican</div>
-        </div> -->
-        
-        <!-- </div>
-      
-      
-        <a class="prev" onclick='plusSlides(-1)'>&#10094;</a>
-        <a class="next" onclick='plusSlides(1)'>&#10095;</a>
-      </div> -->
-      <!-- <br/> -->
-      
-      
-      <!-- <div style='text-align: center;'>
-        <span class="dot" onclick='currentSlide(1)'></span>
-        <span class="dot" onclick='currentSlide(2)'></span>
-        <span class="dot" onclick='currentSlide(3)'></span>
-        <span class="dot" onclick='currentSlide(4)'></span>
-      </div> -->
-
 </body>
 <script>
   var slideIndex = 1;
@@ -135,17 +85,12 @@ function currentSlide(n){
 function showSlides(n){
   var i;
   var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
   if (n > slides.length) {slideIndex = 1}
   if (n < 1) {slideIndex = slides.length}
   for (i = 0; i < slides.length; i++) {
       slides[i].style.display = "none";
   }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
   slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
 }
 
 pause = () => {
