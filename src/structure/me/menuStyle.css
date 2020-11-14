@@ -118,21 +118,23 @@ of comments */
     position: relative;
     margin: auto
 }
-/* .slideshow-inner{
-    /* background-size: cover;
-    background-position: center; */
-    /* width:100%; */
-    /* text-align: center;
+.slideshow-inner{
+    background-size: cover;
+    background-position: center; 
+    width:100%; 
+    text-align: center;
     color:#ffffff;
-    font-size: x-large; */
+}
 
 .mySlides {
     display: none;
   height: 400px;
-  border: solid 1px black;
 }
-.images{
-    height: 300px;
+
+.imges{
+    width: 500px;
+    height: auto;
+    max-height: 90%;
 }
 
 .prev,
