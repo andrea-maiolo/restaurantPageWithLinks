@@ -34,6 +34,8 @@
     
 </div>  */}
 
+//this us the menu page generating function 
+
 const createMenu = (function(){
     const content = document.querySelector('#content');
 
@@ -46,29 +48,62 @@ const createMenu = (function(){
     slides1.classList.add('mySlides');
     const img1 = document.createElement('img');
     img1.classList.add('images');
-    img1.src="../../../dist/styles/img/mgg-vitchakirn-98Xi5vMGKck-unsplash.jpg";
+    img1.src="../../../dist/styles/img/eaters-collective-12eHC6FxPyg-unsplash.jpg"; 
     const p1 = document.createElement('p');
     p1.classList.add('description');
-    p1.innerHTML="pasta al pesto";
+    p1.innerHTML="Pasta with fresh pesto";
+    slides1.appendChild(img1);
     slides1.appendChild(p1);
 
     const slides2 = document.createElement('div');
-    slides2.classList.add('mySlides')
+    slides2.classList.add('mySlides');
+    const img2 = document.createElement('img');
+    img2.classList.add('images');
+    img2.src="../../../dist/styles/img/louis-hansel-shotsoflouis-cC0_UO1Obg4-unsplash.jpg"; 
     const p2 = document.createElement('p');
     p2.classList.add('description');
-    p2.innerHTML="- ToadMo";
+    p2.innerHTML="Pizza margherita";
+    slides2.appendChild(img2);
     slides2.appendChild(p2);
 
     const slides3 = document.createElement('div');
-    slides3.classList.add('mySlides')
+    slides3.classList.add('mySlides');
+    const img3 = document.createElement('img');
+    img3.classList.add('images');
+    img3.src="../../../dist/styles/img/wine-dharma-LAQVVwmIZQI-unsplash.jpg"; 
     const p3 = document.createElement('p');
     p3.classList.add('description');
-    p3.innerHTML="- Thomas A. Edison";
+    p3.innerHTML="Fish skewers";
+    slides3.appendChild(img3);
     slides3.appendChild(p3);
+
+    const slides4 = document.createElement('div');
+    slides4.classList.add('mySlides');
+    const img4 = document.createElement('img');
+    img4.classList.add('images');
+    img4.src="../../../dist/styles/img/mgg-vitchakorn-azTbzHoA9nc-unsplash.jpg"; 
+    const p4 = document.createElement('p');
+    p4.classList.add('description');
+    p4.innerHTML="Coleslaw salad with smoking salmon";
+    slides4.appendChild(img4);
+    slides4.appendChild(p4);
+
+    const slides5 = document.createElement('div');
+    slides5.classList.add('mySlides');
+    const img5 = document.createElement('img');
+    img5.classList.add('images');
+    img5.src="../../../dist/styles/img/mgg-vitchakorn-98Xi5vMGKck-unsplash.jpg"; 
+    const p5 = document.createElement('p');
+    p5.classList.add('description');
+    p5.innerHTML="Pasta with shrimps";
+    slides5.appendChild(img5);
+    slides5.appendChild(p5);
 
     slideshowInner.appendChild(slides1);
     slideshowInner.appendChild(slides2);
     slideshowInner.appendChild(slides3);
+    slideshowInner.appendChild(slides4);
+    slideshowInner.appendChild(slides5);
 
     const a1 = document.createElement('a');
     a1.classList.add('prev');
@@ -86,33 +121,7 @@ const createMenu = (function(){
 })()
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  {/* let slideIndex = 1; 
+  let slideIndex = 1; 
   let myTimer; 
   let slideshowContainer;
 
@@ -168,4 +177,4 @@ pause = () => {
 resume = () =>{
   clearInterval(myTimer);
   myTimer = setInterval(function(){plusSlides(slideIndex)}, 4000);
-} */}
+} 
