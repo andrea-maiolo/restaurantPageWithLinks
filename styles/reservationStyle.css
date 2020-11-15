@@ -1,0 +1,109 @@
+.header {
+    background-color: aquamarine;
+    display: flex;
+}
+
+.logo {
+    width: auto;
+    height: 85px;
+    flex: 1;
+}
+
+.right {
+    list-style: none;
+    flex: 3;
+    display: flex;
+    font-size: larger;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+li {
+    flex: 1;
+}
+
+a {
+    color: #000000;
+    text-decoration: none;
+}
+
+.left {
+    flex: 1;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#firstImg {
+    background-image: url(img/tim.jpg);
+    text-align: left;
+}
+
+#secondImg {
+    background-image: url(img/mexican-food-left-side-background.jpg);
+    text-align: right;
+}
+
+#thirdImg {
+    text-align: left;
+    background-image: url(img/breakfast-food-standing-right-side.jpg);
+}
+
+.images {
+    text-align: center;
+    align-items: center;
+    color: black;
+    font-size: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    min-width: 500px;
+    min-height: 500px;
+    justify-content: center;
+    flex: 1;
+    width: 100vw;
+    max-width: 100%;
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+}
+
+.imagesP {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.rightB {
+    flex: 1;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+footer {
+    display: flex;
+    background-color: aquamarine;
+}
+
+.insta {
+    height: 20px;
+}
+
+h1 {
+    font-size: xx-large;
+    color:#e0c7bd;
+    /* color: aquamarine; */
+
+}
+
+p {
+    /* color: aquamarine; */
+    font-size: x-large;
+    color:#e0c7bd;
+}
