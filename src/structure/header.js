@@ -17,7 +17,7 @@ const headerGenerator = (function() {
     header.classList.add("header");
 
     const logoTop = document.createElement('img');
-    logoTop.src = "styles/img/medium-size.svg";
+    logoTop.src = "../../../dist/styles/img/medium-size.svg";
     logoTop.classList.add("logo");
 
     const navTop = document.createElement('nav');

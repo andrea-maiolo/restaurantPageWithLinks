@@ -39,7 +39,7 @@ const footerGenerator = (function() {
     const a2Bot = document.createElement('a');
     a2Bot.href = "#";
     const insta = document.createElement('img');
-    insta.src = "styles/img/insta.svg";
+    insta.src = "../../../dist/styles/img/insta.svg";
     insta.classList.add('insta');
     a2Bot.appendChild(insta);
     li2Bot.appendChild(a2Bot);
@@ -50,7 +50,7 @@ const footerGenerator = (function() {
     navLeft.appendChild(ulLeft);
 
     const logoBot = document.createElement('img');
-    logoBot.src = "styles/imgmedium-size.svg";
+    logoBot.src = "../../../dist/styles/img/medium-size.svg";
     logoBot.classList.add("logo");
 
     const navRight = document.createElement('nav');
