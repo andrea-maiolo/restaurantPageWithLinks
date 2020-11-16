@@ -97,13 +97,10 @@ footer {
 
 h1 {
     font-size: xx-large;
-    color:#e0c7bd;
-    /* color: aquamarine; */
-
+    color: #e0c7bd;
 }
 
 p {
-    /* color: aquamarine; */
     font-size: x-large;
-    color:#e0c7bd;
+    color: #e0c7bd;
 }

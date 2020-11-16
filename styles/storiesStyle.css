@@ -1,4 +1,3 @@
-
 .header {
     background-color: aquamarine;
     display: flex;
@@ -58,13 +57,13 @@ footer {
 
 h1 {
     font-size: xx-large;
-    color:#e0c7bd;
+    color: #e0c7bd;
 
 }
 
 p {
     font-size: x-large;
-    color:#e0c7bd;
+    color: #e0c7bd;
 }
 
 /* this is 
@@ -78,15 +77,17 @@ of comments */
     position: relative;
     margin: auto
 }
-.slideshow-inner{
+
+.slideshow-inner {
     background-image: url(../../../dist/styles/img/tim.jpg);
     background-size: cover;
     background-position: center;
-    width:100%;
+    width: 100%;
     text-align: center;
-    color:#ffffff;
+    color: #ffffff;
     font-size: x-large;
 }
+
 .mySlides {
     display: none;
     height: 400px;
@@ -127,11 +128,10 @@ of comments */
     color: #f2f2f2;
     font-size: large;
     padding-top: 12px;
-  padding-bottom: 12px;
+    padding-bottom: 12px;
     position: absolute;
     bottom: 0;
     width: 100%;
     text-align: center;
     background-color: #222428
 }
-
