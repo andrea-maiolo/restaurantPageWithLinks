@@ -76,9 +76,11 @@ const createStories = (function(){
 
     const a1 = document.createElement('a');
     a1.classList.add('prev');
+    a1.innerHTML = "❮";
 
     const a2 = document.createElement('a');
     a2.classList.add('next');
+    a2.innerHTML="❯";
 
     slideShowContainer.appendChild(slideshowInner);
     slideShowContainer.appendChild(a1);
@@ -95,8 +97,17 @@ let myTimer;
 let slideshowContainer;
 let a1 = document.querySelector('.prev');
 let a2 = document.querySelector('.next');
-a1.addEventListener('onclick', plusSlides(-1));
-a2.addEventListener('onclick', plusSlides(1));
+a1.addEventListener('click', go);
+a2.addEventListener('click', go);
+
+function go(e){
+  arrow = e.path[0];
+  if(arrow == a2){
+    plusSlides(1); 
+  }else if(arrow ==a1){
+    plusSlides(-1); 
+  }
+}
 
 
       //this is the part of code that creates the carousel
