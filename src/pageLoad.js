@@ -13,6 +13,9 @@
 const pageLoad = (function() {
     const content = document.querySelector('#content');
 
+    const container = document.createElement('div');
+    container.id='container';
+
     const header = document.createElement('div');
     header.classList.add("header");
 
@@ -26,12 +29,14 @@ const pageLoad = (function() {
     const li1Top = document.createElement('li');
     const a1Top = document.createElement('a');
     a1Top.innerHTML = "Menù";
+    a1Top.id='a1Top';
     a1Top.href = "#";
     li1Top.appendChild(a1Top);
 
     const li2Top = document.createElement('li');
     const a2Top = document.createElement('a');
     a2Top.innerHTML = "Stories";
+    a2Top.id='a2Top';
     a2Top.href = "#";
     li2Top.appendChild(a2Top);
 
@@ -39,6 +44,7 @@ const pageLoad = (function() {
     const a3Top = document.createElement('a');
     a3Top.innerHTML = "Reservations";
     a3Top.id='a3Top';
+    a3Top.href="#"
     li3Top.appendChild(a3Top);
 
     navTop.appendChild(li1Top);
@@ -108,8 +114,9 @@ const pageLoad = (function() {
     divImagesPannel.appendChild(divSecondImg);
     divImagesPannel.appendChild(divThirdImg);
 
-    content.appendChild(divImagesPannel);
+    container.appendChild(divImagesPannel);
 
+    content.appendChild(container);
     {
     /* <footer>
     <nav class="left">

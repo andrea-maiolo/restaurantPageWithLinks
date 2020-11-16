@@ -1,84 +1,12 @@
-.header {
-    background-color: aquamarine;
-    display: flex;
-}
 
-.logo {
-    width: auto;
-    height: 85px;
-    flex: 1;
-}
-
-.right {
-    list-style: none;
-    flex: 3;
-    display: flex;
-    font-size: larger;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
-
-li {
-    flex: 1;
-}
-
-a {
-    color: #000000;
-    text-decoration: none;
-}
-
-.left {
-    flex: 1;
-    list-style-type: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
-
-.rightB {
-    flex: 1;
-    list-style-type: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
-
-footer {
-    display: flex;
-    background-color: aquamarine;
-}
-
-.insta {
-    height: 20px;
-}
-
-h1 {
-    font-size: xx-large;
-    color: #e0c7bd;
-
-}
-
-p {
-    font-size: x-large;
-    color: #e0c7bd;
-}
-
-/* this is 
-just a lines
-of comments */
-
-
-.slideshow-container {
+.slideshow-container-stories {
     max-width: 90%;
     min-height: 430px;
     position: relative;
     margin: auto
 }
 
-.slideshow-inner {
+.slideshow-inner-stories {
     background-image: url(../../../dist/styles/img/tim.jpg);
     background-size: cover;
     background-position: center;
@@ -88,13 +16,13 @@ of comments */
     font-size: x-large;
 }
 
-.mySlides {
+.mySlides-stories {
     display: none;
     height: 400px;
 }
 
-.prev,
-.next {
+.prev-stories,
+.next-stories {
     cursor: pointer;
     position: absolute;
     top: 50%;
@@ -108,18 +36,18 @@ of comments */
     border-radius: 0 3px 3px 0
 }
 
-.next {
+.next-stories {
     right: -50px;
     border-radius: 3px 3px 3px 3px
 }
 
-.prev {
+.prev-stories {
     left: -50px;
     border-radius: 3px 3px 3px 3px
 }
 
-.prev:hover,
-.next:hover {
+.prev-stories:hover,
+.next-stories:hover {
     color: #f2f2f2;
     background-color: rgba(0, 0, 0, 0.8)
 }

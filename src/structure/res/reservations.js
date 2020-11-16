@@ -55,6 +55,9 @@
 function reservationsPageGenerator(){
     const content = document.querySelector('#content');
 
+    const container = document.createElement('div');
+    container.id='container';
+
     const p1 = document.createElement('p');
     p1.innerHTML = "Scoresby St 34";
     const p2 = document.createElement('p');
@@ -177,11 +180,13 @@ function reservationsPageGenerator(){
 
     imgDiv.appendChild(img);
 
-    content.appendChild(p1);
-    content.appendChild(p2);
-    content.appendChild(p3);
-    content.appendChild(tableDiv);
-    content.appendChild(imgDiv);
+    container.appendChild(p1);
+    container.appendChild(p2);
+    container.appendChild(p3);
+    container.appendChild(tableDiv);
+    container.appendChild(imgDiv);
+
+    content.appendChild(container)
 // })();
 }
 
