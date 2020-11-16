@@ -104,3 +104,135 @@ p {
     font-size: x-large;
     color: #e0c7bd;
 }
+
+.slideshow-container-menu {
+    max-width: 90%;
+    min-height: 430px;
+    position: relative;
+    margin: auto
+}
+
+.slideshow-inner-menu {
+    background-position: center;
+    width: 100%;
+    text-align: center;
+}
+
+.mySlides-menu {
+    display: none;
+    height: 400px;
+}
+
+.images-menu {
+    height: 100vh;
+    width: 100vw;
+    max-width: 90%;
+}
+
+.prev-menu,
+.next-menu{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: #222428;
+    font-weight: bold;
+    font-size: 30px;
+    transition: .6s ease;
+    border-radius: 0 3px 3px 0
+}
+
+.next-menu {
+    right: -50px;
+    border-radius: 3px 3px 3px 3px
+}
+
+.prev-menu {
+    left: -50px;
+    border-radius: 3px 3px 3px 3px
+}
+
+.prev-menu:hover,
+.next-menu:hover {
+    color: #f2f2f2;
+    background-color: rgba(0, 0, 0, 0.8)
+}
+
+.description {
+    color: #f2f2f2;
+    font-size: large;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: #222428
+}
+
+.slideshow-container-stories {
+    max-width: 90%;
+    min-height: 430px;
+    position: relative;
+    margin: auto
+}
+
+.slideshow-inner-stories {
+    background-image: url(../../../dist/styles/img/tim.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    text-align: center;
+    color: #ffffff;
+    font-size: x-large;
+}
+
+.mySlides-stories {
+    display: none;
+    height: 400px;
+}
+
+.prev-stories,
+.next-stories {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: #222428;
+    font-weight: bold;
+    font-size: 30px;
+    transition: .6s ease;
+    border-radius: 0 3px 3px 0
+}
+
+.next-stories {
+    right: -50px;
+    border-radius: 3px 3px 3px 3px
+}
+
+.prev-stories {
+    left: -50px;
+    border-radius: 3px 3px 3px 3px
+}
+
+.prev-stories:hover,
+.next-stories:hover {
+    color: #f2f2f2;
+    background-color: rgba(0, 0, 0, 0.8)
+}
+
+.author {
+    color: #f2f2f2;
+    font-size: large;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: #222428
+}
