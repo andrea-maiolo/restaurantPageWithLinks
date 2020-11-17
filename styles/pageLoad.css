@@ -236,3 +236,21 @@ p {
     text-align: center;
     background-color: #222428
 }
+
+.pReservation{
+    color:#000000;
+}
+
+.table-reservation{
+    position: relative;
+    left:1000px;
+    top:-147px;
+    width:50px;
+}
+
+.img-reservation{
+    position:relative;
+    top:-100px;
+    margin:auto;
+    width:500px;
+}
