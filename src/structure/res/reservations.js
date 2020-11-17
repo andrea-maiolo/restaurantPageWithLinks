@@ -59,13 +59,17 @@ function reservationsPageGenerator(){
     container.id='container';
 
     const p1 = document.createElement('p');
+    p1.classList.add('pReservation');
     p1.innerHTML = "Scoresby St 34";
     const p2 = document.createElement('p');
+    p2.classList.add('pReservation');
     p2.innerHTML = "Telephone 07451-770586";
     const p3 = document.createElement('p');
+    p3.classList.add('pReservation');
     p3.innerHTML = "Email mariosreservations@gmail.com"
 
     const tableDiv = document.createElement('div');
+    tableDiv.classList.add('table-reservation');
     const table = document.createElement('table');
 
     const caption = document.createElement('caption');
@@ -175,6 +179,7 @@ function reservationsPageGenerator(){
     tableDiv.appendChild(table);
 
     const imgDiv = document.createElement('div');
+    imgDiv.classList.add('img-reservation');
     const img = document.createElement('img');
     img.src = "../../../dist/styles/img/map.png";
 

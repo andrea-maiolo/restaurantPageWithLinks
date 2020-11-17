@@ -42,9 +42,12 @@ function loadMenuPage(){
    content.removeChild(footer);
    createMenu();
    content.appendChild(footer);
+   startCarouselMenu();
 }
 
  //this is the logic for the carousel
+  //this is the part of code that creates the carousel
+//for the stories page
  function startCarouselStory(){
  let slideIndex = 1;
  let myTimer;
@@ -63,9 +66,7 @@ function loadMenuPage(){
    }
  }
  
- 
- //this is the part of code that creates the carousel
- window.addEventListener('change', function() {
+ window.addEventListener('popstate', function() {
    showSlides(slideIndex);
    myTimer = setInterval(function() {
        plusSlides(1)
@@ -134,3 +135,95 @@ function loadMenuPage(){
    }, 4000);
  }
 }
+
+//comment
+//this isntead is the one
+//that create the fucntion for the menu page
+
+function startCarouselMenu(){
+    let slideIndex = 1;
+    let myTimer;
+    let slideshowContainer;
+    let a1 = document.querySelector('.prev-menu');
+    let a2 = document.querySelector('.next-menu');
+    a1.addEventListener('click', go);
+    a2.addEventListener('click', go);
+    
+    function go(e) {
+      let arrow = e.path[0];
+      if (arrow == a2) {
+          plusSlides(1);
+      } else if (arrow == a1) {
+          plusSlides(-1);
+      }
+    }
+    
+    window.addEventListener('popstate', function() {
+      showSlides(slideIndex);
+      myTimer = setInterval(function() {
+          plusSlides(1)
+      }, 4000);
+    
+      slideshowContainer = document.getElementsByClassName('slideshow-inner-menu')[0];
+    
+      slideshowContainer.addEventListener('mouseenter', pause)
+      slideshowContainer.addEventListener('mouseleave', resume)
+    })
+    
+    //Controls the current slide and resets interval if needed
+    function currentSlide(n) {
+      clearInterval(myTimer);
+      myTimer = setInterval(function() {
+          plusSlides(n + 1)
+      }, 4000);
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      let slides = document.getElementsByClassName("mySlides-menu");
+      let i;
+      if (n > slides.length) {
+          slideIndex = 1
+      }
+      if (n < 1) {
+          slideIndex = slides.length
+      }
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+      }
+      slides[slideIndex - 1].style.display = "block";
+    }
+    
+    // NEXT AND PREVIOUS CONTROL
+    function plusSlides(n) {
+      clearInterval(myTimer);
+      if (n < 0) {
+          showSlides(slideIndex -= 1);
+      } else {
+          showSlides(slideIndex += 1);
+      }
+    
+      //COMMENT OUT THE LINES BELOW TO KEEP ARROWS PART OF MOUSEENTER PAUSE/RESUME
+    
+      if (n === -1) {
+          myTimer = setInterval(function() {
+              plusSlides(n + 2)
+          }, 4000);
+      } else {
+          myTimer = setInterval(function() {
+              plusSlides(n + 1)
+          }, 4000);
+      }
+    }
+    
+    let pause = () => {
+      clearInterval(myTimer);
+    }
+    
+    let resume = () => {
+      clearInterval(myTimer);
+      myTimer = setInterval(function() {
+          plusSlides(slideIndex)
+      }, 4000);
+    }
+   }
