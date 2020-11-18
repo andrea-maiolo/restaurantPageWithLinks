@@ -55,7 +55,8 @@ function createMenu(){
   slides1.classList.add('mySlides-menu');
   const img1 = document.createElement('img');
   img1.classList.add('images-menu');
-  img1.src = "../../dist/styles/eaters-collective-12eHC6FxPyg-unsplash.jpg";
+  // img1.src = "../../dist/styles/eaters-collective-12eHC6FxPyg-unsplash.jpg";
+  img1.src = "styles/eaters-collective-12eHC6FxPyg-unsplash.jpg";
   const p1 = document.createElement('p');
   p1.classList.add('description');
   p1.innerHTML = "Pasta with fresh pesto";
@@ -66,7 +67,8 @@ function createMenu(){
   slides2.classList.add('mySlides-menu');
   const img2 = document.createElement('img');
   img2.classList.add('images-menu');
-  img2.src = "../../dist/styles/louis-hansel-shotsoflouis-cC0_UO1Obg4-unsplash.jpg";
+  // img2.src = "../../dist/styles/louis-hansel-shotsoflouis-cC0_UO1Obg4-unsplash.jpg";
+  img2.src = "styles/louis-hansel-shotsoflouis-cC0_UO1Obg4-unsplash.jpg";
   const p2 = document.createElement('p');
   p2.classList.add('description');
   p2.innerHTML = "Pizza margherita";
@@ -77,7 +79,8 @@ function createMenu(){
   slides3.classList.add('mySlides-menu');
   const img3 = document.createElement('img');
   img3.classList.add('images-menu');
-  img3.src = "../../dist/styles/wine-dharma-LAQVVwmIZQI-unsplash.jpg";
+  // img3.src = "../../dist/styles/wine-dharma-LAQVVwmIZQI-unsplash.jpg";
+  img3.src = "styles/wine-dharma-LAQVVwmIZQI-unsplash.jpg";
   const p3 = document.createElement('p');
   p3.classList.add('description');
   p3.innerHTML = "Fish skewers";
@@ -88,7 +91,8 @@ function createMenu(){
   slides4.classList.add('mySlides-menu');
   const img4 = document.createElement('img');
   img4.classList.add('images-menu');
-  img4.src = "../../dist/styles/mgg-vitchakorn-azTbzHoA9nc-unsplash.jpg";
+  // img4.src = "../../dist/styles/mgg-vitchakorn-azTbzHoA9nc-unsplash.jpg";
+  img4.src = "styles/mgg-vitchakorn-azTbzHoA9nc-unsplash.jpg";
   const p4 = document.createElement('p');
   p4.classList.add('description');
   p4.innerHTML = "Coleslaw salad with smoking salmon";
@@ -99,7 +103,8 @@ function createMenu(){
   slides5.classList.add('mySlides-menu');
   const img5 = document.createElement('img');
   img5.classList.add('images-menu');
-  img5.src = "../../dist/styles/mgg-vitchakorn-98Xi5vMGKck-unsplash.jpg";
+  // img5.src = "../../dist/styles/mgg-vitchakorn-98Xi5vMGKck-unsplash.jpg";
+  img5.src = "styles/mgg-vitchakorn-98Xi5vMGKck-unsplash.jpg";
   const p5 = document.createElement('p');
   p5.classList.add('description');
   p5.innerHTML = "Pasta with shrimps";
