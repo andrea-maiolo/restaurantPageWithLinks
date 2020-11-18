@@ -19,9 +19,13 @@ const pageLoad = (function() {
     const header = document.createElement('div');
     header.classList.add("header");
 
+    const logoA = document.createElement('a');
+    logoA.classList.add('logo-link');
     const logoTop = document.createElement('img');
-    logoTop.src = "styles/img/medium-size.svg";
+    logoTop.src = "../../../dist/styles/img/medium-size.svg";
     logoTop.classList.add("logo");
+    logoA.href='#';
+    logoA.appendChild(logoTop);
 
     const navTop = document.createElement('nav');
     navTop.classList.add("right");
@@ -51,7 +55,7 @@ const pageLoad = (function() {
     navTop.appendChild(li2Top);
     navTop.appendChild(li3Top);
 
-    header.appendChild(logoTop);
+    header.appendChild(logoA);
     header.appendChild(navTop);
 
     content.appendChild(header);

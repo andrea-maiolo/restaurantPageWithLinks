@@ -1,8 +1,9 @@
 //importing all file here
-import {pageLoad} from './pageLoad'
-import {reservationsPageGenerator} from './structure/res/reservations'
-import {createStories} from './structure/sto/stories'
-import {createMenu} from './structure/me/menu'
+import {pageLoad} from './pageLoad';
+import {reservationsPageGenerator} from './structure/reservations';
+import {createStories} from './structure/stories';
+import {createMenu} from './structure/menu';
+import {mainPage} from './structure/mainPage';
 
 //those are the nav that will help you navigate in the website
 let a1Top = document.querySelector('#a1Top');
@@ -13,8 +14,11 @@ a2Top.addEventListener('click', loadStoriesPage);
 
 let a3Top = document.querySelector('#a3Top');
 a3Top.addEventListener('click', loadReservationPage);
+
+let lA = document.querySelector('.logo-link');
+lA.addEventListener('click', mainPageGenerator);
 //this is the main window of the page
-let content = document.querySelector('#content');
+const content = document.querySelector('#content');
 //footer to be moved at the end of page
 let footer = document.querySelector('#footer');
 
@@ -43,6 +47,14 @@ function loadMenuPage(){
    createMenu();
    content.appendChild(footer);
    startCarouselMenu();
+}
+
+function mainPageGenerator() { 
+  let container = document.querySelector('#container');
+  content.removeChild(container);
+  content.removeChild(footer);
+  mainPage();
+  content.appendChild(footer);
 }
 
  //this is the logic for the carousel
