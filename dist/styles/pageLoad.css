@@ -1,3 +1,7 @@
+body{
+    margin:auto;
+}
+
 .header {
     background-color: aquamarine;
     display: flex;
@@ -124,8 +128,7 @@ p {
 }
 
 .images-menu {
-    height: 100vh;
-    width: 100vw;
+    max-height: 90%;
     max-width: 90%;
 }
 
@@ -242,15 +245,10 @@ p {
 }
 
 .table-reservation{
-    position: relative;
-    left:1000px;
-    top:-147px;
-    width:50px;
+   margin-top:15px;
 }
 
 .img-reservation{
-    position:relative;
-    top:-100px;
-    margin:auto;
-    width:500px;
+    margin-top:15px;
+    margin-bottom: 10px;
 }

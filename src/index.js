@@ -49,89 +49,89 @@ function loadMenuPage(){
   //this is the part of code that creates the carousel
 //for the stories page
  function startCarouselStory(){
- let slideIndex = 1;
- let myTimer;
- let slideshowContainer;
- let a1 = document.querySelector('.prev-stories');
- let a2 = document.querySelector('.next-stories');
- a1.addEventListener('click', go);
- a2.addEventListener('click', go);
+ let slideIndexStories = 1;
+ let myTimerStories;
+ let slideshowContainerStories;
+ let a1Stories = document.querySelector('.prev-stories');
+ let a2Stories = document.querySelector('.next-stories');
+ a1Stories.addEventListener('click', go);
+ a2Stories.addEventListener('click', go);
  
  function go(e) {
    let arrow = e.path[0];
-   if (arrow == a2) {
+   if (arrow == a2Stories) {
        plusSlides(1);
-   } else if (arrow == a1) {
+   } else if (arrow == a1Stories) {
        plusSlides(-1);
    }
  }
  
  window.addEventListener('popstate', function() {
-   showSlides(slideIndex);
-   myTimer = setInterval(function() {
+   showSlidesStories(slideIndexStories);
+   myTimerStories = setInterval(function() {
        plusSlides(1)
    }, 4000);
  
-   slideshowContainer = document.getElementsByClassName('slideshow-inner-stories')[0];
+   slideshowContainerStories = document.getElementsByClassName('slideshow-inner-stories')[0];
  
-   slideshowContainer.addEventListener('mouseenter', pause)
-   slideshowContainer.addEventListener('mouseleave', resume)
+   slideshowContainerStories.addEventListener('mouseenter', pause)
+   slideshowContainerStories.addEventListener('mouseleave', resume)
  })
  
  //Controls the current slide and resets interval if needed
  function currentSlide(n) {
-   clearInterval(myTimer);
-   myTimer = setInterval(function() {
+   clearInterval(myTimerStories);
+   myTimerStories = setInterval(function() {
        plusSlides(n + 1)
    }, 4000);
-   showSlides(slideIndex = n);
+   showSlidesStories(slideIndexStories = n);
  }
  
- function showSlides(n) {
+ function showSlidesStories(n) {
    let slides = document.getElementsByClassName("mySlides-stories");
    let i;
    if (n > slides.length) {
-       slideIndex = 1
+       slideIndexStories = 1
    }
    if (n < 1) {
-       slideIndex = slides.length
+       slideIndexStories = slides.length
    }
    for (i = 0; i < slides.length; i++) {
        slides[i].style.display = "none";
    }
-   slides[slideIndex - 1].style.display = "block";
+   slides[slideIndexStories - 1].style.display = "block";
  }
  
  // NEXT AND PREVIOUS CONTROL
  function plusSlides(n) {
-   clearInterval(myTimer);
+   clearInterval(myTimerStories);
    if (n < 0) {
-       showSlides(slideIndex -= 1);
+       showSlidesStories(slideIndexStories -= 1);
    } else {
-       showSlides(slideIndex += 1);
+       showSlidesStories(slideIndexStories += 1);
    }
  
    //COMMENT OUT THE LINES BELOW TO KEEP ARROWS PART OF MOUSEENTER PAUSE/RESUME
  
    if (n === -1) {
-       myTimer = setInterval(function() {
+       myTimerStories = setInterval(function() {
            plusSlides(n + 2)
        }, 4000);
    } else {
-       myTimer = setInterval(function() {
+       myTimerStories = setInterval(function() {
            plusSlides(n + 1)
        }, 4000);
    }
  }
  
  let pause = () => {
-   clearInterval(myTimer);
+   clearInterval(myTimerStories);
  }
  
  let resume = () => {
-   clearInterval(myTimer);
-   myTimer = setInterval(function() {
-       plusSlides(slideIndex)
+   clearInterval(myTimerStories);
+   myTimerStories = setInterval(function() {
+       plusSlides(slideIndexStories)
    }, 4000);
  }
 }
@@ -141,89 +141,89 @@ function loadMenuPage(){
 //that create the fucntion for the menu page
 
 function startCarouselMenu(){
-    let slideIndex = 1;
-    let myTimer;
-    let slideshowContainer;
-    let a1 = document.querySelector('.prev-menu');
-    let a2 = document.querySelector('.next-menu');
-    a1.addEventListener('click', go);
-    a2.addEventListener('click', go);
+    let slideIndexMenu = 1;
+    let myTimerMenu;
+    let slideshowContainerMenu;
+    let a1Menu = document.querySelector('.prev-menu');
+    let a2Menu = document.querySelector('.next-menu');
+    a1Menu.addEventListener('click', go);
+    a2Menu.addEventListener('click', go);
     
     function go(e) {
       let arrow = e.path[0];
-      if (arrow == a2) {
+      if (arrow == a2Menu) {
           plusSlides(1);
-      } else if (arrow == a1) {
+      } else if (arrow == a1Menu) {
           plusSlides(-1);
       }
     }
     
     window.addEventListener('popstate', function() {
-      showSlides(slideIndex);
-      myTimer = setInterval(function() {
+      showSlidesMenu(slideIndexMenu);
+      myTimerMenu = setInterval(function() {
           plusSlides(1)
       }, 4000);
     
-      slideshowContainer = document.getElementsByClassName('slideshow-inner-menu')[0];
+      slideshowContainerMenu = document.getElementsByClassName('slideshow-inner-menu')[0];
     
-      slideshowContainer.addEventListener('mouseenter', pause)
-      slideshowContainer.addEventListener('mouseleave', resume)
+      slideshowContainerMenu.addEventListener('mouseenter', pause)
+      slideshowContainerMenu.addEventListener('mouseleave', resume)
     })
     
     //Controls the current slide and resets interval if needed
     function currentSlide(n) {
-      clearInterval(myTimer);
-      myTimer = setInterval(function() {
+      clearInterval(myTimerMenu);
+      myTimerMenu = setInterval(function() {
           plusSlides(n + 1)
       }, 4000);
-      showSlides(slideIndex = n);
+      showSlidesMenu(slideIndexMenu = n);
     }
     
-    function showSlides(n) {
+    function showSlidesMenu(n) {
       let slides = document.getElementsByClassName("mySlides-menu");
       let i;
       if (n > slides.length) {
-          slideIndex = 1
+          slideIndexMenu = 1
       }
       if (n < 1) {
-          slideIndex = slides.length
+          slideIndexMenu = slides.length
       }
       for (i = 0; i < slides.length; i++) {
           slides[i].style.display = "none";
       }
-      slides[slideIndex - 1].style.display = "block";
+      slides[slideIndexMenu - 1].style.display = "block";
     }
     
     // NEXT AND PREVIOUS CONTROL
     function plusSlides(n) {
-      clearInterval(myTimer);
+      clearInterval(myTimerMenu);
       if (n < 0) {
-          showSlides(slideIndex -= 1);
+          showSlidesMenu(slideIndexMenu -= 1);
       } else {
-          showSlides(slideIndex += 1);
+          showSlidesMenu(slideIndexMenu += 1);
       }
     
       //COMMENT OUT THE LINES BELOW TO KEEP ARROWS PART OF MOUSEENTER PAUSE/RESUME
     
       if (n === -1) {
-          myTimer = setInterval(function() {
+          myTimerMenu = setInterval(function() {
               plusSlides(n + 2)
           }, 4000);
       } else {
-          myTimer = setInterval(function() {
+          myTimerMenu = setInterval(function() {
               plusSlides(n + 1)
           }, 4000);
       }
     }
     
     let pause = () => {
-      clearInterval(myTimer);
+      clearInterval(myTimerMenu);
     }
     
     let resume = () => {
-      clearInterval(myTimer);
-      myTimer = setInterval(function() {
-          plusSlides(slideIndex)
+      clearInterval(myTimerMenu);
+      myTimerMenu = setInterval(function() {
+          plusSlides(slideIndexMenu)
       }, 4000);
     }
    }
