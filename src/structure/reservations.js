@@ -181,7 +181,7 @@ function reservationsPageGenerator(){
     const imgDiv = document.createElement('div');
     imgDiv.classList.add('img-reservation');
     const img = document.createElement('img');
-    img.src = "../../../dist/styles/img/map.png";
+    img.src = "../../dist/styles/map.png";
 
     imgDiv.appendChild(img);
 

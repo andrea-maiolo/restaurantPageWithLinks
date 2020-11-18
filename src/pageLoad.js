@@ -22,7 +22,7 @@ const pageLoad = (function() {
     const logoA = document.createElement('a');
     logoA.classList.add('logo-link');
     const logoTop = document.createElement('img');
-    logoTop.src = "../../../dist/styles/img/medium-size.svg";
+    logoTop.src = "../dist/styles/medium-size.svg";
     logoTop.classList.add("logo");
     logoA.href='#';
     logoA.appendChild(logoTop);
@@ -156,7 +156,7 @@ const pageLoad = (function() {
     const a2Bot = document.createElement('a');
     a2Bot.href = "#";
     const insta = document.createElement('img');
-    insta.src = "styles/img/insta.svg";
+    insta.src = "../dist/styles/insta.svg";
     insta.classList.add('insta');
     a2Bot.appendChild(insta);
     li2Bot.appendChild(a2Bot);
@@ -165,7 +165,7 @@ const pageLoad = (function() {
     navLeft.appendChild(li2Bot);
 
     const logoBot = document.createElement('img');
-    logoBot.src = "styles/img/medium-size.svg";
+    logoBot.src = "../dist/styles/medium-size.svg";
     logoBot.classList.add("logo");
 
     const navRight = document.createElement('nav');
