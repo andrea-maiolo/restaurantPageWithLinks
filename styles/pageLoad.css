@@ -7,6 +7,12 @@ body{
     display: flex;
 }
 
+.logo-link{
+    margin-left:10px;
+    height: 85px;
+    flex: 1;
+}
+
 .logo {
     width: auto;
     height: 85px;
