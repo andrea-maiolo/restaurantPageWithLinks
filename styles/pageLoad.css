@@ -48,18 +48,18 @@ a {
 }
 
 #firstImg {
-    background-image: url(img/mgg-vitchakorn-98Xi5vMGKck-unsplash.jpg);
+    background-image: url(mgg-vitchakorn-98Xi5vMGKck-unsplash.jpg);
     text-align: left;
 }
 
 #secondImg {
-    background-image: url(img/wine-dharma-LAQVVwmIZQI-unsplash.jpg);
+    background-image: url(wine-dharma-LAQVVwmIZQI-unsplash.jpg);
     text-align: right;
 }
 
 #thirdImg {
     text-align: left;
-    background-image: url(img/eaters-collective-12eHC6FxPyg-unsplash.jpg);
+    background-image: url(eaters-collective-12eHC6FxPyg-unsplash.jpg);
 }
 
 .images {
@@ -189,7 +189,7 @@ p {
 }
 
 .slideshow-inner-stories {
-    background-image: url(../../../dist/styles/img/tim.jpg);
+    background-image: url(tim.jpg);
     background-size: cover;
     background-position: center;
     width: 100%;
